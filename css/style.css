@@ -4,7 +4,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* Barra de navegação */
 nav{
@@ -12,6 +15,54 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: #1E1D1E;
+    background-image: linear-gradient(to right, rgb(245, 81, 171),  rgb(81, 157, 245));
     height: 90px;
+}
+
+.nav-bar{
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 4s;
+}
+
+
+/* Logo */
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+/* Imagem de fundo */
+main{
+    background-image: url(/assets/images/astronaut-space-suit-neon-stars-light-5k-5120x2881-6275.jpg) ;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Barra de rolagem */
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to top, rgb(245, 81, 171),  rgb(81, 157, 245));
+    border-radius: 12px;
 }
