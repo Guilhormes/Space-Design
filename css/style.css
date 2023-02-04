@@ -36,6 +36,12 @@ a{
     transition: background 4s;
 }
 
+.nav-bar li:last-child a{
+    margin-left: 75px;
+    color: #fff;
+    
+}
+
 
 /* Logo */
 .logo{
@@ -63,6 +69,19 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(to top, rgb(245, 81, 171),  rgb(81, 157, 245));
+    background-image: linear-gradient(to top, rgb(248, 118, 190), rgba(114, 179, 253, 0.966));
     border-radius: 12px;
+}
+
+
+/* Titulo */
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 125px;
+}
+.subtitulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
 }

@@ -1,0 +1,26 @@
+.btn{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+
+.matricula:hover{
+    background-image: linear-gradient(to right, rgb(245, 81, 171),  rgb(81, 157, 245));
+    border: 2px solid  #fff;
+    border-radius: 25px;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
