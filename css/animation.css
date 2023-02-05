@@ -1,10 +1,22 @@
+/* Aparecer texto */
 @keyframes text-appear {
     from {
-      transform: translateY(-15px);
+      transform: translateY(-30px);
       opacity: 0;
     }
     to {
       transform: translateY(0px);
       opacity: 1;
     }
-  }
+}
+
+/* fundo Degrade animado */
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    100% {
+        background-position: 100% 50%
+    }
+}
+
