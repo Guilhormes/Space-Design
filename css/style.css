@@ -15,18 +15,25 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(to right, rgb(245, 81, 171),  rgb(81, 157, 245));
+    background-image: linear-gradient(to right, rgb(248, 118, 190), rgba(114, 179, 253, 0.966));
     height: 90px;
 }
 
-.nav-bar{
+#nav-bar{
     list-style: none;
     display: flex;
 }
 
-.nav-bar li{
+#nav-bar li{
     letter-spacing: 3px;
     margin-left: 32px;
+}
+
+
+#nav-bar li:last-child a{
+    margin-left: 75px;
+    color: #fff;
+    
 }
 
 a{
@@ -36,15 +43,24 @@ a{
     transition: background 4s;
 }
 
-.nav-bar li:last-child a{
-    margin-left: 75px;
-    color: #fff;
-    
+hr{
+    border: solid 1px white;
+    transform: scaleX(0);
+    opacity: 0;
 }
 
+li hr{
+    transition: all 0.5s;
+}
+
+li:hover hr{
+    transform: scaleX(1);
+    opacity: 1;
+
+}
 
 /* Logo */
-.logo{
+#logo{
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -52,7 +68,7 @@ a{
 
 
 /* Imagem de fundo */
-main{
+#titulo{
     background-image: url(/assets/images/astronaut-space-suit-neon-stars-light-5k-5120x2881-6275.jpg) ;
     background-size: cover;
     height: 100vh;
@@ -79,9 +95,15 @@ h1{
     color: #fff;
     text-transform: uppercase;
     font-size: 125px;
+    text-align: center;
+    padding-top: 200px;
+    animation: text-appear .5s .3s forwards;
 }
+
 .subtitulo{
     color: #fff;
     text-transform: uppercase;
     font-size: 24px;
+    text-align: center;
+    animation: text-appear .6s .4s forwards;
 }
